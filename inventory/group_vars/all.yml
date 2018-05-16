@@ -84,7 +84,8 @@ openshift_cluster_content:
     tags:
     - sonar
   - name: sonarqube-postgresql
-    template: "openshift//postgresql-persistent"
+    # template: "openshift//postgresql-persistent"
+    template: "https://github.com/openshift/origin/blob/master/examples/db-templates/postgresql-ephemeral-template.json"
     params: "{{ inventory_dir }}/../params/sonarqube/postgresql"
     namespace: roridedi-ci-cd
     tags:
