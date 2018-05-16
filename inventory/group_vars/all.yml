@@ -70,7 +70,8 @@ openshift_cluster_content:
     tags:
     - jenkins
   - name: nexus
-    template: "{{ inventory_dir }}/../openshift-templates/nexus/template.json"
+    # template: "{{ inventory_dir }}/../openshift-templates/nexus/template.json"
+    template: "https://raw.githubusercontent.com/OpenShiftDemos/nexus/master/nexus3-template.yaml"
     params: "{{ inventory_dir }}/../params/nexus/deploy"
     namespace: roridedi-ci-cd
     tags:
