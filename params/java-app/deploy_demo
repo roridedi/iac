@@ -1,0 +1,2 @@
+PIPELINES_NAMESPACE=roridedi-ci-cd
+NAME=java-app
