@@ -64,7 +64,7 @@ openshift_cluster_content:
 - object: ci-cd-deployments
   content:
   - name: jenkins-persistent
-    template: "https://raw.githubusercontent.com/openshift/origin/master/examples/jenkins/jenkins-ephemeral-template.json"
+    template: "https://raw.githubusercontent.com/goern/jenkins-acme/master/jenkins-ephemeral-template.yaml"
     params: "{{ inventory_dir }}/../params/jenkins/deploy"
     namespace: roridedi-ci-cd
     tags:
